@@ -34,7 +34,7 @@ public class CourseView {
     private View adBannerLay;//广告条容器
     private AdBannerAdapter ada;//适配器
     public static final int MSG_AD_SLID = 002;// 广告自动滑动
-    private ViewPagerIbdicator vpi;//小圆点
+    private ViewPagerIndicator vpi;//小圆点
     private MHandler mHandler;//事件捕获
     private List<CourseBean> cadl;  // 这个是为了放广告栏的数据的
     private static final String TAG = "CourseView";
@@ -100,7 +100,7 @@ public class CourseView {
         ada = new AdBannerAdapter(mContext.getSupportFragmentManager(), mHandler);
         adPager.setAdapter(ada);
         adPager.setOnTouchListener(ada);
-        vpi = (ViewPagerIbdicator) mCurrentView.findViewById(R.id.vpi_advert_indicator);
+        vpi = (ViewPagerIndicator) mCurrentView.findViewById(R.id.vpi_advert_indicator);
         vpi.setCount(ada.getSize()); // 设置小圆点的个数
         adBannerLay = mCurrentView.findViewById(R.id.rl_adBanner);
         adPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

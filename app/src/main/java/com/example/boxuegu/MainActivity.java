@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FrameLayout mBodyLayout;
     // 底部按钮栏
     private LinearLayout mBottomLayout;
-
+    // 要往中间放的三个View
     private View mCourseBtn;
     private View mExercisesBtn;
     private View mMyInfoBtn;
-
+    // 底部导航栏的三个选项，图片及文本框
     private TextView tv_course;
     private TextView tv_exercises;
     private TextView tv_myInfo;

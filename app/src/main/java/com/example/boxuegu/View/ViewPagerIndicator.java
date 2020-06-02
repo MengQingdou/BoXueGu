@@ -8,15 +8,15 @@ import android.widget.LinearLayout;
 
 import com.example.boxuegu.R;
 
-public class ViewPagerIbdicator extends LinearLayout {
+public class ViewPagerIndicator extends LinearLayout {
     private int mCount;     // 小圆点的个数
     private int mIndex;     // 当前小圆点的位置
     private Context context;
-    // 两个构造函数ViewPagerIbdicator
-    public ViewPagerIbdicator(Context context){
+    // 两个构造函数ViewPagerIndicator
+    public ViewPagerIndicator(Context context){
         this(context, null);
     }
-    public ViewPagerIbdicator(Context context, AttributeSet attrs){
+    public ViewPagerIndicator(Context context, AttributeSet attrs){
         super(context, attrs);
         this.context = context;
         setGravity(Gravity.CENTER);     // 设置此布局居中
