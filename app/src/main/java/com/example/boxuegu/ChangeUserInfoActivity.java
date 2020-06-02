@@ -27,6 +27,7 @@ public class ChangeUserInfoActivity extends AppCompatActivity {
     private ImageView iv_delete;
     private static final String TAG = "ChangeUserInfoActivity";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
